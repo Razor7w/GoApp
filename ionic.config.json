@@ -1,6 +1,8 @@
 {
   "name": "GoApp",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular",
   "id": "fa1631e6"
 }
