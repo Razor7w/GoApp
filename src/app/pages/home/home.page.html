@@ -1,9 +1,21 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title> {{ info.nombre_api }}</ion-title>
+    <ion-title> GO App</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <!--SCANNEAR-->
+      <ion-button expand="block" color="success" (click)="leerCode()">Scannear Código</ion-button>
+
+      <ion-list>
+        <ion-item  *ngIf="datoscaneado">
+          <ion-label>  {{ datoscaneado["text"] }}</ion-label>
+        </ion-item>
+      </ion-list>
+
+      <ion-input placeholder="Ingresa Nombre"></ion-input>
+      <ion-input placeholder="Ingresa Team"></ion-input>
+
 
 </ion-content>
